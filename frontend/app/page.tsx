@@ -28,14 +28,6 @@ export default function Home() {
                         <p className="mx-auto my-4 text-sm w-full max-w-xl text-center font-medium leading-relaxed tracking-wide">
                         Me dedico a transformar datos en conocimiento accionable. Como economista, combino modelos estadísticos y análisis geoespacial para responder preguntas complejas sobre el territorio, los mercados y las decisiones económicas. Domino R y sus principales paquetes para análisis y visualización, y estoy expandiendo mis habilidades hacia el desarrollo web con Go y Next.js.
                         </p>
-                        <div className="flex flex-row justify-center items-center space-x-4 my-8">
-                            <Button>
-                                Comienza a analizar tus reseñas
-                            </Button>
-                            <Button variant="secondary">
-                                Aprende más
-                            </Button>
-                        </div>
 
                         <div
                             className="absolute top-0 -z-10 max-h-full max-w-screen-lg w-full h-full blur-2xl">
@@ -58,17 +50,18 @@ export default function Home() {
                 className="border-b border-border bg-gradient-to-b from-background to-transparent via-background via-90% relative">
                 <div className="container mx-auto text-center">
                     <div className="my-24">
-                        <h5 className="text-primary">
-                            WHY CHOOSE US
-                        </h5>
-                        <h2 className="text-4xl font-extrabold my-4">
-                            Build better websites with us
-                        </h2>
+                        
+                    <h5 className="text-primary">
+  SOBRE MÍ
+</h5>
+<h2 className="text-4xl font-extrabold my-4">
+  Construyo soluciones digitales claras, útiles y bien pensadas
+</h2>
 
-                        <p className="mx-auto my-4 text-sm w-full max-w-md bg-transparent text-center font-medium leading-relaxed tracking-wide text-muted-foreground">
-                            Show off your features or services in a beautiful way. This section is perfect for
-                            showcasing
-                        </p>
+<p className="mx-auto my-4 text-sm w-full max-w-md bg-transparent text-center font-medium leading-relaxed tracking-wide text-muted-foreground">
+  Desde visualizaciones de datos hasta aplicaciones web, mi enfoque está en crear experiencias que comuniquen, funcionen y se sientan bien.
+</p>
+
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
   {features.map((feature) => (

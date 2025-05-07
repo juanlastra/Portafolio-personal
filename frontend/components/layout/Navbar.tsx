@@ -4,6 +4,8 @@ import {navLinks} from "@/data/navLinks";
 import {ThemeChanger} from "@/app/Theme-changer";
 import Image from "next/image";
 
+
+
 const Navbar = () => {
     
     return (
@@ -16,22 +18,20 @@ const Navbar = () => {
                 height={220}
                  className="dark:invert"
                 ></Image>
-                <ul className="md:flex flex-row justify-between gap-11 hidden">
-                    {navLinks.map((link) => (
-                        <li key={link.title}>
-                            <Link href={link.href
-                            } className="text-xl">
-                                {link.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+               <ul className="md:flex flex-row justify-between gap-11 hidden">
+    {navLinks.map((link) => (
+        <li key={link.title}>
+            <Link href={link.href} className="text-xl flex items-center gap-2">
+                <link.icon/>
+                {link.title}
+            </Link>
+        </li>
+    ))}
+</ul>
+
 
                 <div className="flex flex-row justify-end space-x-2">
                     <ThemeChanger/>
-                    <Button>
-                        Suscribete
-                    </Button>
                 </div>
             </div>
         </nav>
